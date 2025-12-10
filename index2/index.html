@@ -1,0 +1,123 @@
+<!-- ...existing code... -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>NetflixDemo</title>
+</head>
+<body>
+
+<nav>
+  <table role="presentation" style="width:100%">
+    <tr>
+      <td>
+        <a href="index.html">NetflixDemo</a>
+      </td>
+      <td align="right">
+        <a href="catalogo.html">Catálogo</a> |
+        <a href="login.html">Iniciar sesión</a> |
+        <a href="suscribirse.html">Suscribirse</a>
+      </td>
+    </tr>
+  </table>
+</nav>
+<!-- ...existing code... -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>NetflixDemo</title>
+</head>
+<body>
+
+<nav>
+  <table role="presentation" style="width:100%">
+    <tr>
+      <td>
+        <a href="index.html">NetflixDemo</a>
+      </td>
+      <td align="right">
+        <a href="catalogo.html">Catálogo</a> |
+        <a href="login.html">Iniciar sesión</a> |
+        <a href="#suscribirse">Suscribirse</a>
+      </td>
+    </tr>
+  </table>
+</nav>
+
+<!-- Sección de Suscribirse dentro de la misma pestaña -->
+<section id="suscribirse">
+  <h2>Suscribirse</h2>
+
+  <form method="post" action="#" aria-labelledby="suscribirse">
+    <!-- Datos personales -->
+    <fieldset>
+      <legend>Ingresar</legend>
+
+      <label for="nombre">Nombre completo</label><br>
+      <input id="nombre" name="nombre" type="text" required><br><br>
+
+      <label for="correo">Correo electrónico</label><br>
+      <input id="correo" name="correo" type="email" required>
+    </fieldset>
+
+    <br>
+
+    <!-- Plan de suscripción: botón que despliega opciones (HTML puro) -->
+    <fieldset>
+      <legend>Plan de suscripción</legend>
+
+      <details>
+        <summary>Seleccionar plan</summary>
+
+        <p>
+          <input type="radio" id="plan-basico" name="plan" value="Basico" required>
+          <label for="plan-basico">Básico - $99/mes</label><br>
+
+          <input type="radio" id="plan-estandar" name="plan" value="Estandar">
+          <label for="plan-estandar">Estándar - $149/mes</label><br>
+
+          <input type="radio" id="plan-premiun" name="plan" value="Premiun">
+          <label for="plan-premiun">Premium - $199/mes</label>
+        </p>
+      </details>
+    </fieldset>
+
+    <br>
+
+    <!-- Formas de pago: cuadro con radio buttons -->
+    <fieldset>
+      <legend>Formas de pago</legend>
+
+      <input type="radio" id="pago-regalo" name="forma_pago" value="Codigo de regalo" required>
+      <label for="pago-regalo">Código de regalo</label><br>
+
+      <input type="radio" id="pago-debito" name="forma_pago" value="Tarjeta de débito">
+      <label for="pago-debito">Tarjeta de débito</label><br>
+
+      <input type="radio" id="pago-credito" name="forma_pago" value="Tarjeta de crédito">
+      <label for="pago-credito">Tarjeta de crédito</label>
+    </fieldset>
+
+    <br>
+
+    <!-- Teléfono -->
+    <fieldset>
+      <legend>Teléfono</legend>
+      <label for="telefono">Número de teléfono</label><br>
+      <input id="telefono" name="telefono" type="tel" pattern="[0-9+\-\s()]{7,}" placeholder="Ej: +34123456789">
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Suscribirse</button>
+  </form>
+</section>
+
+</body>
+</html>
+<!-- ...existing code... -->
+</body>
+</html>
+<!-- ...existing code... -->
+ 
